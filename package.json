@@ -1,6 +1,6 @@
 {
   "name": "@emstack/axios-affected-checker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Scans your machine and Node.js projects for indicators of the axios supply chain attack",
   "bin": {
     "axios-affected-checker": "cli.js"
