@@ -6,7 +6,9 @@ Scans your machine and Node.js projects for indicators of the axios supply chain
 
 | Check | Details |
 |---|---|
-| macOS RAT artifact | Presence of `/Library/Caches/com.apple.act.mond` (system-level compromise) |
+| macOS RAT artifact | Presence of `/Library/Caches/com.apple.act.mond` |
+| Linux RAT artifact | Presence of `/tmp/ld.py` |
+| Windows RAT artifact | Presence of `%PROGRAMDATA%\wt.exe` |
 | Malicious axios versions | `1.14.1` or `0.30.4` installed in any project |
 | Malicious dropper package | `plain-crypto-js` present in `node_modules` |
 
@@ -17,18 +19,12 @@ Scans your machine and Node.js projects for indicators of the axios supply chain
 
 ## How to run
 
-Run the script from the **parent directory** that contains your Node.js projects as subdirectories. The scanner will check every subdirectory that has a `package.json`.
+Run the script, then enter the folder path containing your Node.js projects when prompted. It will scan all subdirectories with a `package.json`. Press Enter to use the current directory.
 
-**macOS**
+**macOS & Linux** — auto-detects OS; performs macOS RAT check when on macOS
 ```bash
 chmod +x checker.sh
 ./checker.sh
-```
-
-**Linux**
-```bash
-chmod +x checker-linux.sh
-./checker-linux.sh
 ```
 
 **Windows (PowerShell)**
