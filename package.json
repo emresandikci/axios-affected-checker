@@ -6,6 +6,8 @@
     "axios-affected-checker": "cli.js"
   },
   "files": [
+    "README.md",
+    "LICENSE",
     "cli.js",
     "checker.sh",
     "fixer.sh",
