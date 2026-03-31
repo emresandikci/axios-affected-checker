@@ -1,0 +1,26 @@
+{
+  "name": "@emstack/axios-affected-checker",
+  "version": "1.0.0",
+  "description": "Scans your machine and Node.js projects for indicators of the axios supply chain attack",
+  "bin": {
+    "axios-affected-checker": "cli.js"
+  },
+  "files": [
+    "cli.js",
+    "checker.sh",
+    "fixer.sh",
+    "checker.ps1",
+    "fixer.ps1"
+  ],
+  "keywords": [
+    "axios",
+    "supply-chain",
+    "security",
+    "malware",
+    "checker"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}

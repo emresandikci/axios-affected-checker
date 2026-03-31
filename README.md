@@ -6,6 +6,20 @@ Supports package managers: **npm, pnpm, yarn, bun**
 
 ---
 
+## Quickstart (npx)
+
+No installation required:
+
+```bash
+# Scan for indicators
+npx @emstack/axios-affected-checker
+
+# Fix issues found
+npx @emstack/axios-affected-checker --fix
+```
+
+---
+
 ## Scripts
 
 | Script | Platform | Purpose |
